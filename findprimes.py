@@ -1,6 +1,3 @@
-from threading import Thread
-
-
 def isprime(number):
     for counter in range(1, number+1):
         testresult = number % counter
@@ -12,6 +9,6 @@ def isprime(number):
 
 maincounter = 1
 while True:
-    if (Thread(target=isprime, args=maincounter)):
+    if (isprime(int(maincounter))):
         print(f'{maincounter}')
     maincounter += 1
